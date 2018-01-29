@@ -1,10 +1,10 @@
-package com.trvrx.smack
+package com.trvrx.smack.Controller
 
-import android.content.Intent
 import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.trvrx.smack.R
 import kotlinx.android.synthetic.main.activity_create_user.*
 import java.util.*
 
