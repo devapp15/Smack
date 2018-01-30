@@ -23,6 +23,8 @@ object UserDataService {
         App.prefs.authToken = ""
         App.prefs.userEmail = ""
         App.prefs.isLoggedIn = false
+        MessageService.clearMessages()
+        MessageService.clearChannels()
     }
     fun returnAvatarColor(components: String) : Int {
         val strippedColor = components
@@ -40,10 +42,6 @@ object UserDataService {
             g = (scanner.nextDouble() * 255).toInt()
             b = (scanner.nextDouble() * 255).toInt()
         }
-        println("stripped Color is: $strippedColor")
-        println("color R is: $r")
-        println("color G is: $g")
-        println("color B is: $b")
         return Color.rgb(r, g, b)
     }
 }
